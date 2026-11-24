@@ -1,0 +1,2244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Viresh Saradar - Java Full Stack Developer and UI/UX Designer Portfolio">
+
+    <title>Viresh Saradar | Java Full Stack Developer</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="features.css">
+    <link rel="stylesheet" href="overrides.css">
+
+    <noscript>
+        <style>
+            .reveal { opacity: 1 !important; transform: none !important; }
+            .loader { display: none !important; }
+        </style>
+    </noscript>
+</head>
+
+<body>
+
+<a class="skip-link" href="#home">Skip to main content</a>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- =========================
+     LOADING SCREEN
+========================= -->
+
+<div class="loader" id="loader">
+
+    <div class="loader-content">
+
+        <div class="loader-logo">
+            VS
+        </div>
+
+        <div class="loader-line">
+            <span></span>
+        </div>
+
+        <p>INITIALIZING SYSTEM...</p>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="#home" class="logo" aria-label="Viresh Saradar home">
+            <span>V</span>S
+        </a>
+
+        <nav class="nav-links" id="primaryNavigation" aria-label="Primary navigation">
+
+            <a href="#home" class="active">HOME</a>
+
+            <a href="#about">ABOUT</a>
+
+            <a href="#skills">SKILLS</a>
+
+            <a href="#projects">PROJECTS</a>
+
+            <a href="#experience">EXPERIENCE</a>
+
+            <a href="#education">EDUCATION</a>
+
+            <a href="#achievements">ACHIEVEMENTS</a>
+
+            <a href="#certifications">CERTIFICATIONS</a>
+
+            <a href="#contact">CONTACT</a>
+
+        </nav>
+
+        <div class="nav-right">
+
+            <button class="cc-open-btn" id="ccOpen" title="Command Center" aria-haspopup="dialog" aria-controls="ccOverlay">
+                ▦ COMMAND CENTER
+            </button>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primaryNavigation">
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     HERO SECTION
+========================= -->
+
+<section class="hero" id="home" tabindex="-1">
+
+    <!-- Background Grid -->
+    <div class="hero-grid"></div>
+
+    <!-- Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- HUD Elements -->
+
+    <div class="hud hud-top-left">
+        <span>SYS.ONLINE</span>
+        <span>01</span>
+    </div>
+
+    <div class="hud hud-top-right">
+        <span>VS // 2026</span>
+    </div>
+
+    <div class="hud hud-bottom-left">
+        <span>LAT 15.8497°</span>
+        <span>LNG 74.4977°</span>
+    </div>
+
+    <!-- Hero Content -->
+
+    <div class="hero-content">
+
+        <div class="hero-label">
+            <span class="status-dot"></span>
+            AVAILABLE FOR OPPORTUNITIES
+        </div>
+
+        <h1>
+            THINK
+            <span>DIFFERENT.</span>
+        </h1>
+
+        <h2>
+            DESIGN DIFFERENT.
+        </h2>
+
+        <p class="hero-role">
+            Java Full Stack Developer
+            <span>|</span>
+            UI/UX Designer
+        </p>
+
+        <p class="hero-description">
+            Computer Science and Design engineering student &amp; Java Full Stack Developer.
+            Building high-performance backend systems with Java and Spring Boot, combined with modern, responsive frontend architecture.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#projects" class="btn btn-primary">
+                EXPLORE MY WORK
+                <span>→</span>
+            </a>
+
+            <a href="assets/resume/Viresh_Resume.pdf"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-outline"
+               title="View latest resume in new tab">
+                VIEW RESUME ↗
+            </a>
+
+            <a href="assets/resume/Viresh_Resume.pdf"
+               download="Viresh_Saradar_Resume.pdf"
+               class="btn btn-ghost"
+               title="Download latest PDF resume">
+                ⇩ DOWNLOAD RESUME
+            </a>
+
+            <a href="#contact" class="btn btn-outline">
+                CONTACT ME
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- Fighter Jet (outer layer handles mouse parallax) -->
+
+    <div class="jet-parallax">
+
+        <div class="jet-container">
+
+            <div class="jet-glow"></div>
+
+            <div class="jet">
+                <div class="jet-body"></div>
+                <div class="jet-wing left"></div>
+                <div class="jet-wing right"></div>
+                <div class="jet-tail"></div>
+                <div class="jet-cockpit"></div>
+                <div class="jet-afterburner"></div>
+            </div>
+
+            <!-- HUD Panel: Pilot Profile -->
+            <div class="jet-hud hud-pilot">
+                <h4>PILOT PROFILE</h4>
+                <p class="hud-name">VIRESH SARADAR</p>
+                <p>JAVA FULL STACK</p>
+                <p>UI/UX DESIGNER</p>
+            </div>
+
+            <!-- HUD Panel: System Status -->
+            <div class="jet-hud hud-status">
+                <h4>SYSTEM STATUS</h4>
+                <p class="hud-online"><span class="status-dot"></span> ONLINE</p>
+                <div class="hud-meter"><span>JAVA</span><i><b style="--lv:90"></b></i><em>90%</em></div>
+                <div class="hud-meter"><span>SPRING BOOT</span><i><b style="--lv:82"></b></i><em>82%</em></div>
+                <div class="hud-meter"><span>UI/UX</span><i><b style="--lv:85"></b></i><em>85%</em></div>
+                <div class="hud-meter"><span>MYSQL</span><i><b style="--lv:82"></b></i><em>82%</em></div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Scroll indicator -->
+
+    <div class="scroll-indicator">
+
+        <span>SCROLL TO EXPLORE</span>
+
+        <div class="scroll-line"></div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="section about-section" id="about">
+
+    <div class="section-container">
+
+        <div class="section-heading">
+
+            <span class="section-number">01</span>
+
+            <div>
+                <p class="section-label">PROFILE</p>
+                <h2>ABOUT <span>ME</span></h2>
+            </div>
+
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-image">
+
+                <div class="profile-frame">
+
+                    <div class="profile-placeholder">
+
+                        <img
+                            src="assets/images/profile.optimized.jpg"
+                            alt="Viresh Saradar"
+                            width="1000"
+                            height="1000"
+                            decoding="async">
+
+                    </div>
+
+                    <div class="frame-corner top-left"></div>
+                    <div class="frame-corner top-right"></div>
+                    <div class="frame-corner bottom-left"></div>
+                    <div class="frame-corner bottom-right"></div>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <span class="small-label">
+                    WHO I AM
+                </span>
+
+                <h3 class="about-name">
+                    VIRESH <span>SARADAR.</span>
+                </h3>
+
+                <p class="about-tagline">
+                    Java Full Stack Developer &nbsp;·&nbsp; UI/UX Designer
+                </p>
+
+                <h3>
+                    Precision meets
+                    <span>creativity.</span>
+                </h3>
+
+                <p>
+                    Computer Science and Design engineering student with an <strong>8.4 CGPA</strong> and practical knowledge of <strong>Java, Object-Oriented Programming, Spring Boot, SQL, MySQL</strong> and modern frontend technologies.
+                </p>
+
+                <p>
+                    Experienced in developing academic software projects involving <strong>network routing, placement management and crop recommendation</strong>. Familiar with REST APIs, database management, Git and responsive web development.
+                </p>
+
+                <p>
+                    Seeking an entry-level <strong>Java Full Stack Developer</strong> or <strong>Software Developer</strong> opportunity to contribute to real-world applications and strengthen software engineering skills.
+                </p>
+
+
+                <div class="about-stats">
+
+                    <div class="stat">
+                        <strong>8.4</strong>
+                        <span>CGPA</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>03</strong>
+                        <span>PROJECTS</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>03</strong>
+                        <span>CHAMPIONSHIPS</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>05</strong>
+                        <span>CERTIFICATIONS</span>
+                    </div>
+
+                </div>
+
+
+                <div class="profile-dashboard reveal">
+
+                    <div class="dash-head">
+                        <span class="hud-corners">VIRESH SARADAR</span>
+                        <em class="hud-online"><span class="status-dot"></span>AVAILABLE</em>
+                    </div>
+
+                    <div class="dash-grid">
+                        <div><span>ROLE</span><p>Java Full Stack Developer</p></div>
+                        <div><span>DESIGN</span><p>UI/UX Designer</p></div>
+                        <div><span>EDUCATION</span><p>B.E. Computer Science &amp; Design</p></div>
+                        <div><span>CGPA</span><p>8.4 / 10</p></div>
+                        <div><span>LOCATION</span><p>Karnataka, India</p></div>
+                        <div><span>STATUS</span><p>Seeking Developer Roles</p></div>
+                    </div>
+
+                </div>
+
+                <div class="about-actions reveal">
+
+                    <a href="assets/resume/Viresh_Resume.pdf"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn btn-primary"
+                       title="Open latest resume in new tab">
+                        VIEW FULL RESUME <span>↗</span>
+                    </a>
+
+                    <a href="assets/resume/Viresh_Resume.pdf"
+                       download="Viresh_Saradar_Resume.pdf"
+                       class="btn btn-ghost"
+                       title="Download latest PDF resume">
+                        ⇩ DOWNLOAD RESUME
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     SKILLS
+========================= -->
+
+<section class="section skills-section" id="skills">
+
+    <div class="section-container">
+
+        <div class="section-heading">
+
+            <span class="section-number">02</span>
+
+            <div>
+                <p class="section-label">CAPABILITIES</p>
+                <h2>TECHNICAL <span>SKILLS</span></h2>
+            </div>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+
+            <!-- Skill 01 -->
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    JAVA
+                </div>
+
+                <h3>Java</h3>
+
+                <p>Proficient · OOP · Core Java</p>
+
+                <div class="skill-bar">
+                    <span data-level="90"></span>
+                </div>
+
+            </div>
+
+
+            <!-- Skill 02 -->
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    SB
+                </div>
+
+                <h3>Spring Boot</h3>
+
+                <p>Spring MVC · RESTful APIs</p>
+
+                <div class="skill-bar">
+                    <span data-level="85"></span>
+                </div>
+
+            </div>
+
+
+            <!-- Skill 03 -->
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    SEC
+                </div>
+
+                <h3>Spring Security &amp; JWT</h3>
+
+                <p>Authentication · Authorization</p>
+
+                <div class="skill-bar">
+                    <span data-level="82"></span>
+                </div>
+
+            </div>
+
+
+            <!-- Skill 04 -->
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    SQL
+                </div>
+
+                <h3>MySQL &amp; ORM</h3>
+
+                <p>Hibernate · Spring Data JPA · JDBC</p>
+
+                <div class="skill-bar">
+                    <span data-level="85"></span>
+                </div>
+
+            </div>
+
+
+            <!-- Skill 05 -->
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    WEB
+                </div>
+
+                <h3>Frontend Technologies</h3>
+
+                <p>HTML5 · CSS3 · JavaScript</p>
+
+                <div class="skill-bar">
+                    <span data-level="82"></span>
+                </div>
+
+            </div>
+
+
+            <!-- Skill 06 -->
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    UI/UX
+                </div>
+
+                <h3>Figma &amp; UI/UX</h3>
+
+                <p>Wireframing · Prototyping</p>
+
+                <div class="skill-bar">
+                    <span data-level="85"></span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Categorized Skills Grid -->
+
+        <div class="skills-category-grid">
+
+            <!-- Category 1: Programming Languages -->
+            <div class="skill-cat-card reveal">
+                <div class="cat-header">
+                    <span class="cat-icon">&lt;/&gt;</span>
+                    <h3>PROGRAMMING LANGUAGES</h3>
+                </div>
+                <div class="cat-badges">
+                    <span class="badge badge-accent">Java <small>Proficient</small></span>
+                    <span class="badge">C <small>Basic</small></span>
+                    <span class="badge">C++ <small>Basic</small></span>
+                </div>
+            </div>
+
+            <!-- Category 2: Backend Technologies -->
+            <div class="skill-cat-card reveal">
+                <div class="cat-header">
+                    <span class="cat-icon">⚙</span>
+                    <h3>BACKEND TECHNOLOGIES</h3>
+                </div>
+                <div class="cat-badges">
+                    <span class="badge badge-accent">Java</span>
+                    <span class="badge badge-accent">Spring Boot</span>
+                    <span class="badge">Spring MVC</span>
+                    <span class="badge badge-accent">RESTful APIs</span>
+                </div>
+            </div>
+
+            <!-- Category 3: Security & ORM -->
+            <div class="skill-cat-card reveal">
+                <div class="cat-header">
+                    <span class="cat-icon">🔒</span>
+                    <h3>SECURITY &amp; ORM</h3>
+                </div>
+                <div class="cat-badges">
+                    <span class="badge badge-accent">Spring Security</span>
+                    <span class="badge badge-accent">JWT Authentication</span>
+                    <span class="badge">Hibernate</span>
+                    <span class="badge">Spring Data JPA</span>
+                </div>
+            </div>
+
+            <!-- Category 4: Database -->
+            <div class="skill-cat-card reveal">
+                <div class="cat-header">
+                    <span class="cat-icon">🗄</span>
+                    <h3>DATABASE</h3>
+                </div>
+                <div class="cat-badges">
+                    <span class="badge badge-accent">MySQL</span>
+                    <span class="badge badge-accent">SQL</span>
+                    <span class="badge">JDBC</span>
+                </div>
+            </div>
+
+            <!-- Category 5: Frontend Technologies -->
+            <div class="skill-cat-card reveal">
+                <div class="cat-header">
+                    <span class="cat-icon">🌐</span>
+                    <h3>FRONTEND TECHNOLOGIES</h3>
+                </div>
+                <div class="cat-badges">
+                    <span class="badge">HTML5</span>
+                    <span class="badge">CSS3</span>
+                    <span class="badge badge-accent">JavaScript</span>
+                </div>
+            </div>
+
+            <!-- Category 6: Core Concepts & UI/UX -->
+            <div class="skill-cat-card reveal">
+                <div class="cat-header">
+                    <span class="cat-icon">◈</span>
+                    <h3>CORE CONCEPTS &amp; UI/UX</h3>
+                </div>
+                <div class="cat-badges">
+                    <span class="badge badge-accent">Object-Oriented Programming</span>
+                    <span class="badge">Data Structures</span>
+                    <span class="badge">Problem Solving</span>
+                    <span class="badge badge-accent">Figma</span>
+                    <span class="badge">Wireframing</span>
+                    <span class="badge">Prototyping</span>
+                </div>
+            </div>
+
+            <!-- Category 7: Tools & Platforms -->
+            <div class="skill-cat-card reveal">
+                <div class="cat-header">
+                    <span class="cat-icon">🛠</span>
+                    <h3>TOOLS &amp; PLATFORMS</h3>
+                </div>
+                <div class="cat-badges">
+                    <span class="badge badge-accent">Git</span>
+                    <span class="badge badge-accent">GitHub</span>
+                    <span class="badge">VS Code</span>
+                    <span class="badge">Eclipse</span>
+                    <span class="badge">Postman</span>
+                    <span class="badge">Maven</span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Soft Skills & Core Abilities -->
+
+        <div class="soft-skills-container reveal">
+
+            <div class="soft-skills-header">
+                <span class="small-label">PROFESSIONAL ATTRIBUTES</span>
+                <h3>CORE ABILITIES &amp; SOFT SKILLS</h3>
+            </div>
+
+            <div class="soft-skills-pills">
+                <span class="soft-pill">Problem-Solving</span>
+                <span class="soft-pill">Analytical Thinking</span>
+                <span class="soft-pill">Leadership</span>
+                <span class="soft-pill">Teamwork</span>
+                <span class="soft-pill">Communication</span>
+                <span class="soft-pill">Time Management</span>
+                <span class="soft-pill">Adaptability</span>
+            </div>
+
+        </div>
+
+
+        <!-- Technology Radar -->
+
+        <div class="radar-block reveal">
+
+            <div class="radar-head">
+                <span class="small-label">TECHNOLOGY RADAR</span>
+                <h3>SKY SCAN // 360°</h3>
+            </div>
+
+            <div class="tech-radar">
+
+                <div class="radar-rings"></div>
+                <div class="radar-sweep"></div>
+
+                <span class="radar-cat cat-backend">BACKEND</span>
+                <span class="radar-cat cat-frontend">FRONTEND</span>
+                <span class="radar-cat cat-database">DATABASE</span>
+                <span class="radar-cat cat-design">DESIGN</span>
+
+                <div class="radar-dot" style="--x:-118;--y:-118;"><i></i><span>SPRING BOOT</span></div>
+                <div class="radar-dot" style="--x:-60;--y:-165;"><i></i><span>REST API</span></div>
+                <div class="radar-dot" style="--x:-165;--y:-55;"><i></i><span>JAVA</span></div>
+                <div class="radar-dot" style="--x:-135;--y:-150;"><i></i><span>JWT / SECURITY</span></div>
+                <div class="radar-dot" style="--x:120;--y:-120;"><i></i><span>JS</span></div>
+                <div class="radar-dot" style="--x:165;--y:-60;"><i></i><span>HTML5</span></div>
+                <div class="radar-dot" style="--x:168;--y:60;"><i></i><span>CSS3</span></div>
+                <div class="radar-dot" style="--x:-150;--y:95;"><i></i><span>SQL / JDBC</span></div>
+                <div class="radar-dot" style="--x:-90;--y:150;"><i></i><span>MYSQL / JPA</span></div>
+                <div class="radar-dot" style="--x:100;--y:145;"><i></i><span>FIGMA</span></div>
+                <div class="radar-dot" style="--x:50;--y:170;"><i></i><span>WIREFRAME</span></div>
+
+                <div class="radar-core">VIRESH<em>◉</em></div>
+
+            </div>
+
+        </div>
+
+
+        <div class="tech-list">
+
+            <span>C</span>
+            <span>C++</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>SQL</span>
+            <span>OOP</span>
+            <span>Data Structures</span>
+            <span>REST APIs</span>
+            <span>Postman</span>
+            <span>VS Code</span>
+            <span>Eclipse</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PROJECTS
+========================= -->
+
+<section class="section projects-section" id="projects">
+
+    <div class="section-container">
+
+        <div class="section-heading">
+
+            <span class="section-number">03</span>
+
+            <div>
+                <p class="section-label">MISSION LOG</p>
+                <h2>SELECTED <span>PROJECTS</span></h2>
+            </div>
+
+        </div>
+
+
+        <div class="projects-intro">
+            <p>Three full-stack missions across graph intelligence, placement workflows and agricultural decision support.</p>
+            <span><i class="status-dot"></i> 03 SYSTEMS DOCUMENTED</span>
+        </div>
+
+
+        <div class="projects-grid">
+
+
+            <!-- Project 01 -->
+
+            <article class="project-card"
+                     data-mission="01"
+                     role="button"
+                     tabindex="0"
+                     aria-haspopup="dialog"
+                     aria-label="Open Intelligent Network Routing Simulator mission details"
+                     data-title="INTELLIGENT NETWORK|ROUTING SIMULATOR"
+                     data-problem="Comparing shortest paths manually across changing graph weights, traffic conditions and link failures is error-prone and makes routing behavior difficult to inspect."
+                     data-objective="Build an interactive routing workbench that compares graph algorithms, explains route costs and recalculates paths when network conditions change."
+                     data-tech="Java 17|Spring Boot|Spring Data JPA|MySQL|JavaScript|Graph Algorithms"
+                     data-features="Dijkstra, BFS, Bellman-Ford, A* and Floyd-Warshall comparison|Traffic-aware route costing|Congestion and link-failure rerouting|Route analytics and decision explanations|Saved networks and MySQL route history|Six one-click network scenarios"
+                     data-architecture="Interactive dashboard|Spring Boot REST API|Routing, monitoring and scenario services|MySQL persistence"
+                     data-challenges="Different algorithms can return different paths and costs~A shared graph request feeds five algorithms into a side-by-side comparison API.|Congestion or failed links can invalidate an active route~The monitoring service detects degraded links and recalculates a traffic-aware alternative.|Routing should remain usable during a database outage~History recording is isolated so persistence failures do not block route calculation."
+                     data-note="Source-verified scope: five algorithms, traffic and failure-aware monitoring, six demo scenarios, saved networks and route history. The listed public deployment returned 404 when checked, so no live demo is advertised."
+                     data-image="assets/images/Network_routing.optimized.jpg"
+                     data-image-alt="Intelligent Network Routing Simulator dashboard preview"
+                     data-image-caption="Network graph, shortest-path result and route-cost dashboard preview."
+                     data-image-kind="PROJECT VISUAL"
+                     data-github="https://github.com/viresh8088/Network-Routing"
+                     data-demo=""
+                     data-demo-note="No verified public demo is currently available."
+                     data-links="https://github.com/viresh8088/Network-Routing">
+
+                <div class="project-media">
+                    <img
+                        src="assets/images/Network_routing.optimized.jpg"
+                        alt="Intelligent Network Routing Simulator preview"
+                        width="1526"
+                        height="514"
+                        loading="lazy"
+                        decoding="async">
+                </div>
+
+                <div class="project-number">
+                    01
+                </div>
+
+                <div class="project-top">
+
+                    <span class="project-status">
+                        JAVA / SPRING BOOT / GRAPH ENGINE
+                    </span>
+
+                    <span class="project-arrow">
+                        ↗
+                    </span>
+
+                </div>
+
+                <h3>
+                    Intelligent Network
+                    <span>Routing Simulator</span>
+                </h3>
+
+                <p>
+                    An interactive graph workbench that compares five routing algorithms, explains route decisions and adapts paths when traffic or link conditions change.
+                </p>
+
+                <div class="project-features">
+
+                    <span>5 Algorithms</span>
+                    <span>Dynamic Rerouting</span>
+                    <span>Route Analytics</span>
+
+                </div>
+
+                <div class="project-tech">
+                    Java 17 · Spring Boot · MySQL · JavaScript
+                </div>
+
+                <span class="mission-hint">⊕ OPEN MISSION DETAILS</span>
+
+            </article>
+
+
+            <!-- Project 02 -->
+
+            <article class="project-card"
+                     data-mission="02"
+                     role="button"
+                     tabindex="0"
+                     aria-haspopup="dialog"
+                     aria-label="Open Smart Placement Management System mission details"
+                     data-title="SMART PLACEMENT|MANAGEMENT SYSTEM"
+                     data-problem="Placement information is often split across student profiles, company drives, internships and applications, making coordination and status tracking difficult."
+                     data-objective="Create a role-aware placement portal that connects student and officer workflows through a React interface, Express REST API and MySQL database."
+                     data-tech="React|Vite|Node.js|Express|MySQL|Tailwind CSS|REST APIs"
+                     data-features="Student and officer dashboards|Placement drive and internship management|Job and internship application tracking|Duplicate-application prevention|Student profiles with resume uploads|MySQL relational persistence"
+                     data-architecture="React + Vite role-aware client|Express REST API|Multer resume storage|MySQL relational persistence"
+                     data-challenges="Students and placement officers need different workflows~The React client switches dashboards and management views based on the stored user role.|Repeated job or internship applications create duplicate records~The Express API checks for an existing application before inserting a new one.|Profile resumes and application records must stay connected~Multer stores resume files while MySQL links each resume URL to student and application records."
+                     data-note="Source-verified scope: officer and student views, drive and internship CRUD, duplicate-application checks and resume uploads. The live link is the frontend demo; full workflows require the local Express API and MySQL database. Authentication is demo-session based and would need production hardening."
+                     data-image="assets/images/Smart_placement.optimized.jpg"
+                     data-image-alt="Smart Placement Management System dashboard preview"
+                     data-image-caption="Student, company and application overview from the placement dashboard visual."
+                     data-image-kind="PROJECT VISUAL"
+                     data-github="https://github.com/viresh8088/campus-placement-drive"
+                     data-demo="https://campus-placement-drive-beta.vercel.app"
+                     data-demo-label="LIVE FRONTEND DEMO ↗"
+                     data-demo-note="The deployed link is the frontend demo; API and MySQL services require the documented local setup."
+                     data-links="https://github.com/viresh8088/campus-placement-drive">
+
+                <div class="project-media">
+                    <img
+                        src="assets/images/Smart_placement.optimized.jpg"
+                        alt="Smart Placement Management System preview"
+                        width="778"
+                        height="513"
+                        loading="lazy"
+                        decoding="async">
+                </div>
+
+                <div class="project-number">
+                    02
+                </div>
+
+                <div class="project-top">
+
+                    <span class="project-status">
+                        REACT / NODE.JS / MYSQL
+                    </span>
+
+                    <span class="project-arrow">
+                        ↗
+                    </span>
+
+                </div>
+
+                <h3>
+                    Smart Placement
+                    <span>Management System</span>
+                </h3>
+
+                <p>
+                    A role-aware campus placement portal for managing student profiles, company drives, internships and applications through a React and Express workflow.
+                </p>
+
+                <div class="project-features">
+
+                    <span>Role-Based Views</span>
+                    <span>Drive Management</span>
+                    <span>Application Tracking</span>
+
+                </div>
+
+                <div class="project-tech">
+                    React · Vite · Node.js · Express · MySQL
+                </div>
+
+                <span class="mission-hint">⊕ OPEN MISSION DETAILS</span>
+
+            </article>
+
+
+            <!-- Project 03 -->
+
+            <article class="project-card"
+                     data-mission="03"
+                     role="button"
+                     tabindex="0"
+                     aria-haspopup="dialog"
+                     aria-label="Open Smart Crop Recommendation System mission details"
+                     data-title="SMART CROP|RECOMMENDATION SYSTEM"
+                     data-problem="Crop selection depends on interacting soil, climate and weather variables; a raw prediction alone does not explain why a crop is suitable."
+                     data-objective="Combine ONNX inference with agronomic context to deliver ranked crop recommendations, explanations, weather guidance and per-user history through a secure Spring Boot API."
+                     data-tech="Java 17|Spring Boot 3.2|ONNX Runtime|DJL|Spring Security|JWT|Spring Data JPA|H2|Vanilla JavaScript"
+                     data-features="ONNX RandomForest crop inference|Ranked recommendations with factor explanations|Live Open-Meteo weather and forecasts|Fertilizer guidance and market economics|JWT-protected REST APIs|Per-user recommendation history"
+                     data-architecture="Vanilla JavaScript client|Spring Boot REST + JWT|ONNX inference and agronomic services|JPA / H2 history"
+                     data-challenges="ML class labels must match application output~Startup metadata verifies the ONNX feature contract and class order before inference.|Recommendations need context beyond a single prediction~The service combines ranked model results with factor explanations, fertilizer guidance, economics and weather.|Recommendation history must be user-specific~JWT-protected endpoints associate predictions with the authenticated user and persist them through Spring Data JPA."
+                     data-note="Source-verified scope: JWT-protected APIs, ONNX inference, Open-Meteo weather and persistent history. Model metrics are benchmark test results, not field accuracy; the leaf-disease module is a curated knowledge-base demonstration, not a trained vision model."
+                     data-image="assets/images/Cropr_recomendation.jpg"
+                     data-image-alt="Agricultural crop recommendation concept visual"
+                     data-image-caption="Agricultural recommendation concept visual supplied with the portfolio."
+                     data-image-kind="CONCEPT VISUAL"
+                     data-github="https://github.com/viresh8088/smart-farming-assistant"
+                     data-demo=""
+                     data-demo-note="Local demonstration instructions are included in the repository README."
+                     data-links="https://github.com/viresh8088/smart-farming-assistant">
+
+                <div class="project-media">
+                    <img
+                        src="assets/images/Cropr_recomendation.jpg"
+                        alt="Agricultural crop recommendation concept visual"
+                        width="792"
+                        height="387"
+                        loading="lazy"
+                        decoding="async">
+                </div>
+
+                <div class="project-number">
+                    03
+                </div>
+
+                <div class="project-top">
+
+                    <span class="project-status">
+                        SPRING BOOT / ONNX / JWT
+                    </span>
+
+                    <span class="project-arrow">
+                        ↗
+                    </span>
+
+                </div>
+
+                <h3>
+                    Smart Crop
+                    <span>Recommendation System</span>
+                </h3>
+
+                <p>
+                    A secure agricultural decision-support system that pairs ONNX crop inference with explanations, live weather context and personalized recommendation history.
+                </p>
+
+                <div class="project-features">
+
+                    <span>ONNX Inference</span>
+                    <span>Weather Context</span>
+                    <span>JWT + History</span>
+
+                </div>
+
+                <div class="project-tech">
+                    Java 17 · Spring Boot · ONNX · JWT · H2 · Vanilla JS
+                </div>
+
+                <span class="mission-hint">⊕ OPEN MISSION DETAILS</span>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     UI / UX
+========================= -->
+
+<section class="section design-section" id="uiux">
+
+    <div class="section-container">
+
+        <div class="section-heading">
+
+            <span class="section-number">04</span>
+
+            <div>
+                <p class="section-label">DESIGN LAB</p>
+                <h2>UI/UX <span>DESIGN</span></h2>
+            </div>
+
+        </div>
+
+
+        <div class="design-grid">
+
+            <div class="design-main">
+
+                <div class="design-screen">
+
+                    <div class="screen-header">
+
+                        <span>DESIGN_SYSTEM</span>
+
+                        <span>FIGMA / 001</span>
+
+                    </div>
+
+                    <div class="screen-content">
+
+                        <div class="design-showcase" id="designShowcase">
+                            <img
+                                src="assets/images/UI%20image.jpg"
+                                alt="Design system showcase"
+                                width="1680"
+                                height="1120"
+                                loading="lazy"
+                                decoding="async">
+                        </div>
+
+                        <div class="screen-mock">
+
+                            <div class="screen-circle"></div>
+
+                            <div class="screen-lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="design-info">
+
+                <span class="small-label">
+                    DESIGN PHILOSOPHY
+                </span>
+
+                <h3>
+                    Interfaces that
+                    <span>make sense.</span>
+                </h3>
+
+                <p>
+                    I use Figma to transform ideas into clean,
+                    intuitive and functional interfaces.
+                </p>
+
+                <div class="design-skills">
+
+                    <div>
+                        <span>01</span>
+                        Wireframing
+                    </div>
+
+                    <div>
+                        <span>02</span>
+                        Prototyping
+                    </div>
+
+                    <div>
+                        <span>03</span>
+                        UI Design
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Design process -->
+
+        <div class="design-process reveal">
+
+            <span class="small-label">UI/UX DESIGN LAB // PROCESS</span>
+
+            <div class="process-flow">
+
+                <div><i>01</i>DISCOVER</div>
+                <em>↓</em>
+                <div><i>02</i>DEFINE</div>
+                <em>↓</em>
+                <div><i>03</i>WIREFRAME</div>
+                <em>↓</em>
+                <div><i>04</i>DESIGN</div>
+                <em>↓</em>
+                <div><i>05</i>PROTOTYPE</div>
+                <em>↓</em>
+                <div><i>06</i>TEST</div>
+
+            </div>
+
+            <div class="ds-chips">
+
+                <h4>DESIGN SYSTEM COMPONENTS</h4>
+
+                <div>
+                    <span>Color</span>
+                    <span>Typography</span>
+                    <span>Spacing</span>
+                    <span>Buttons</span>
+                    <span>Cards</span>
+                    <span>Forms</span>
+                    <span>Navigation</span>
+                    <span>Components</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     HOW I BUILD - 04B
+========================= -->
+
+<section class="section build-section" id="build">
+
+    <div class="section-container">
+
+        <div class="section-heading">
+            <span class="section-number">04B</span>
+            <div>
+                <p class="section-label">ENGINEERING WORKFLOW</p>
+                <h2>HOW I <span>BUILD</span></h2>
+            </div>
+        </div>
+
+        <div class="build-intro reveal">
+            <p>
+                Every great application starts with an idea.
+                I follow a structured development process to
+                transform problems into meaningful digital solutions.
+            </p>
+            <span>IDEA → EXECUTION → IMPACT</span>
+        </div>
+
+        <!-- DEVELOPMENT JOURNEY -->
+
+        <div class="build-journey">
+
+            <article class="build-step reveal">
+                <div class="step-top">
+                    <span>01</span>
+                    <span class="step-icon">⌕</span>
+                </div>
+                <h3>IDEA & DISCOVERY</h3>
+                <p>
+                    Identify real-world problems, understand user
+                    needs and define the purpose of the application.
+                </p>
+                <div class="step-output">
+                    <span>OUTPUT</span>
+                    Problem Statement
+                </div>
+            </article>
+
+            <article class="build-step reveal">
+                <div class="step-top">
+                    <span>02</span>
+                    <span class="step-icon">⌘</span>
+                </div>
+                <h3>RESEARCH & PLANNING</h3>
+                <p>
+                    Analyze requirements, explore possible solutions
+                    and plan the system architecture and workflow.
+                </p>
+                <div class="step-output">
+                    <span>OUTPUT</span>
+                    Project Blueprint
+                </div>
+            </article>
+
+            <article class="build-step reveal">
+                <div class="step-top">
+                    <span>03</span>
+                    <span class="step-icon">◈</span>
+                </div>
+                <h3>UI / UX DESIGN</h3>
+                <p>
+                    Create wireframes, design intuitive interfaces
+                    and focus on accessibility and user experience.
+                </p>
+                <div class="step-output">
+                    <span>OUTPUT</span>
+                    Design Prototype
+                </div>
+            </article>
+
+            <article class="build-step reveal">
+                <div class="step-top">
+                    <span>04</span>
+                    <span class="step-icon">⌨</span>
+                </div>
+                <h3>DEVELOPMENT</h3>
+                <p>
+                    Develop responsive frontend interfaces,
+                    backend functionality and database integration.
+                </p>
+                <div class="step-output">
+                    <span>OUTPUT</span>
+                    Working Application
+                </div>
+            </article>
+
+            <article class="build-step reveal">
+                <div class="step-top">
+                    <span>05</span>
+                    <span class="step-icon">✓</span>
+                </div>
+                <h3>TESTING & DEBUGGING</h3>
+                <p>
+                    Validate application functionality, identify bugs
+                    and improve reliability and performance.
+                </p>
+                <div class="step-output">
+                    <span>OUTPUT</span>
+                    Tested Application
+                </div>
+            </article>
+
+            <article class="build-step reveal">
+                <div class="step-top">
+                    <span>06</span>
+                    <span class="step-icon">↗</span>
+                </div>
+                <h3>DEPLOYMENT</h3>
+                <p>
+                    Deploy the application, manage source code
+                    and continuously improve the final product.
+                </p>
+                <div class="step-output">
+                    <span>OUTPUT</span>
+                    Live Product
+                </div>
+            </article>
+
+        </div>
+
+        <!-- TECHNOLOGY STACK -->
+
+        <div class="build-tech reveal">
+
+            <div class="build-subheading">
+                <span>02 / TECHNOLOGY ECOSYSTEM</span>
+                <p>TOOLS I USE TO BUILD</p>
+            </div>
+
+            <div class="build-stack">
+
+                <div class="build-card">
+                    <span>01 / DESIGN</span>
+                    <h3>Figma</h3>
+                    <p>Wireframes · Prototypes · UI Design</p>
+                </div>
+
+                <div class="build-card">
+                    <span>02 / FRONTEND</span>
+                    <h3>Web Technologies</h3>
+                    <p>HTML5 · CSS3 · JavaScript</p>
+                </div>
+
+                <div class="build-card">
+                    <span>03 / BACKEND</span>
+                    <h3>Java Ecosystem</h3>
+                    <p>Java · Spring Boot · REST APIs</p>
+                </div>
+
+                <div class="build-card">
+                    <span>04 / DATABASE</span>
+                    <h3>Data Management</h3>
+                    <p>MySQL · SQL · Hibernate · JPA</p>
+                </div>
+
+                <div class="build-card">
+                    <span>05 / DEVELOPMENT TOOLS</span>
+                    <h3>Developer Toolkit</h3>
+                    <p>Git · GitHub · Postman · VS Code</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ENGINEERING PRINCIPLES -->
+
+        <div class="build-principles reveal">
+
+            <div class="build-subheading">
+                <span>03 / DEVELOPMENT STANDARDS</span>
+                <p>MY ENGINEERING PRINCIPLES</p>
+            </div>
+
+            <div class="principle-grid">
+
+                <div class="principle-card">
+                    <span>01</span>
+                    <h3>Clean Code</h3>
+                    <p>Readable, organized and maintainable code.</p>
+                </div>
+
+                <div class="principle-card">
+                    <span>02</span>
+                    <h3>Responsive Design</h3>
+                    <p>Consistent experiences across different devices.</p>
+                </div>
+
+                <div class="principle-card">
+                    <span>03</span>
+                    <h3>Reusable Components</h3>
+                    <p>Modular development and reusable functionality.</p>
+                </div>
+
+                <div class="principle-card">
+                    <span>04</span>
+                    <h3>Continuous Learning</h3>
+                    <p>Learning, testing and improving with every project.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- CLOSING STATEMENT -->
+
+        <div class="build-footer reveal">
+            <span class="build-footer-line"></span>
+            <p>
+                FROM AN IDEA TO A WORKING PRODUCT.
+                <strong>BUILT WITH PURPOSE.</strong>
+            </p>
+            <span class="build-footer-line"></span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     EXPERIENCE
+========================= -->
+
+<section class="section experience-section" id="experience">
+
+    <div class="section-container">
+
+        <div class="section-heading">
+
+            <span class="section-number">05</span>
+
+            <div>
+                <p class="section-label">CAREER LOG</p>
+                <h2>EXPERIENCE</h2>
+            </div>
+
+        </div>
+
+
+        <div class="experience-card">
+
+            <div class="experience-line"></div>
+
+            <div class="experience-date">
+                APRIL 2026 – JUNE 2026
+            </div>
+
+            <div class="experience-content">
+
+                <span class="experience-type">
+                    INTERNSHIP · ETHNOTECH ACADEMY
+                </span>
+
+                <h3>
+                    Java Full Stack Developer Trainee
+                </h3>
+
+                <p style="color: var(--cyan); font-family: var(--font-display); font-size: 13px; margin: 4px 0 12px; letter-spacing: 0.5px;">
+                    Ethnotech Academy
+                </p>
+
+                <p>
+                    • Completed hands-on training in Java, Spring Boot, HTML5, CSS3, JavaScript, MySQL, Git and RESTful API development.
+                </p>
+
+                <p>
+                    • Developed responsive web applications and implemented backend functionalities using Spring Boot and MySQL.
+                </p>
+
+                <div class="experience-tech">
+
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>MySQL</span>
+                    <span>Git</span>
+                    <span>RESTful APIs</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     EDUCATION
+========================= -->
+
+<section class="section education-section" id="education">
+
+    <div class="section-container">
+
+        <div class="section-heading">
+
+            <span class="section-number">06</span>
+
+            <div>
+                <p class="section-label">ACADEMIC LOG</p>
+                <h2>EDUCATION</h2>
+            </div>
+
+        </div>
+
+
+        <div class="timeline">
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-year">
+                    2023 — 2027
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>
+                        Bachelor of Engineering in Computer Science and Design
+                    </h3>
+
+                    <h4>
+                        Tontadarya College of Engineering, Gadag
+                    </h4>
+
+                    <p>
+                        Expected Graduation: 2027
+                    </p>
+
+                    <strong>
+                        CGPA: 8.4 / 10
+                    </strong>
+
+                    <p>
+                        Specializing in Java Full Stack development, Spring Boot, MySQL, REST APIs, Object-Oriented Programming and UI/UX Design.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-year">
+                    2023
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>
+                        Pre-University in Science
+                    </h3>
+
+                    <h4>
+                        RGS Govt PU College, Kittur, Belagavi
+                    </h4>
+
+                    <p>
+                        Year of Completion: 2023
+                    </p>
+
+                    <strong>
+                        Percentage: 83%
+                    </strong>
+
+                    <p>
+                        Completed higher secondary education in Science with 83% distinction.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ACHIEVEMENTS
+========================= -->
+
+<section class="section achievements-section" id="achievements">
+
+    <div class="section-container">
+
+        <div class="section-heading">
+
+            <span class="section-number">07</span>
+
+            <div>
+                <p class="section-label">ACHIEVEMENT LOG</p>
+                <h2>LEADERSHIP & <span>ACHIEVEMENTS</span></h2>
+            </div>
+
+        </div>
+
+
+        <div class="achievement-grid">
+
+            <!-- Achievement 01 -->
+            <div class="achievement-card">
+
+                <div class="achievement-top">
+                    <span>ACHIEVEMENT // 01</span>
+                    <span class="achievement-tag">SPORTS LEADERSHIP</span>
+                </div>
+
+                <h3>
+                    CSD Kabaddi Team Captain
+                </h3>
+
+                <p>
+                    Captain of CSD Kabaddi Team; led team to three college championship titles.
+                </p>
+
+            </div>
+
+
+            <!-- Achievement 02 -->
+            <div class="achievement-card">
+
+                <div class="achievement-top">
+                    <span>ACHIEVEMENT // 02</span>
+                    <span class="achievement-tag">UNIVERSITY ATHLETICS</span>
+                </div>
+
+                <h3>
+                    VTU-Level Representation
+                </h3>
+
+                <p>
+                    Commanded the squad and represented the team at prestigious VTU-level competitions.
+                </p>
+
+            </div>
+
+
+            <!-- Achievement 03 -->
+            <div class="achievement-card">
+
+                <div class="achievement-top">
+                    <span>ACHIEVEMENT // 03</span>
+                    <span class="achievement-tag">STUDENT LEADERSHIP</span>
+                </div>
+
+                <h3>
+                    ABVP Student Coordinator
+                </h3>
+
+                <p>
+                    Demonstrated leadership as an ABVP Student Coordinator by organizing student activities and encouraging student participation.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CERTIFICATIONS
+========================= -->
+
+<section class="section certification-section" id="certifications">
+
+    <div class="section-container">
+
+        <div class="section-heading">
+
+            <span class="section-number">08</span>
+
+            <div>
+                <p class="section-label">VERIFICATION</p>
+                <h2>CERTIFICATIONS &amp; <span>CREDENTIALS</span></h2>
+            </div>
+
+        </div>
+
+
+        <div class="certification-grid">
+
+            <!-- Certificate 01: Hackathon at TCE -->
+            <a href="https://drive.google.com/file/d/1O7pSmiOjniL5a80n0lO2dXIy5WjyS8BC/view?usp=drive_link"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="certificate-card certificate reveal"
+               title="Open Hackathon at TCE Certificate in Google Drive">
+
+                <div class="cert-card-header">
+                    <span class="cert-index">CERT // 01</span>
+                    <div class="cert-badge-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="8" r="6"/>
+                            <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="cert-content">
+                    <span class="cert-type">HACKATHON</span>
+                    <h3 class="cert-title">Hackathon at TCE</h3>
+                    <p class="cert-org">Tontadarya College of Engineering, Gadag</p>
+                </div>
+
+                <div class="cert-action">
+                    <span class="cert-link-text">VIEW CERTIFICATE</span>
+                    <span class="cert-arrow">↗</span>
+                </div>
+
+                <div class="cert-corner tl"></div>
+                <div class="cert-corner br"></div>
+
+            </a>
+
+
+            <!-- Certificate 02: Hackathon at UBDTCE -->
+            <a href="https://drive.google.com/file/d/1yWrvNAFZ-nLISMSu-bBBamRJQWBQ-mK/view?usp=drive_link"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="certificate-card certificate reveal"
+               title="Open Hackathon at UBDTCE Certificate in Google Drive">
+
+                <div class="cert-card-header">
+                    <span class="cert-index">CERT // 02</span>
+                    <div class="cert-badge-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="8" r="6"/>
+                            <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="cert-content">
+                    <span class="cert-type">HACKATHON</span>
+                    <h3 class="cert-title">Hackathon at UBDTCE</h3>
+                    <p class="cert-org">University B.D.T. College of Engineering, Davanagere</p>
+                </div>
+
+                <div class="cert-action">
+                    <span class="cert-link-text">VIEW CERTIFICATE</span>
+                    <span class="cert-arrow">↗</span>
+                </div>
+
+                <div class="cert-corner tl"></div>
+                <div class="cert-corner br"></div>
+
+            </a>
+
+
+            <!-- Certificate 03: AI Tools Workshop – be10x -->
+            <a href="https://drive.google.com/file/d/18MkSc1HjyOneYjBSKn0vRPbQaKxx_i5I/view?usp=drive_link"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="certificate-card certificate reveal"
+               title="Open AI Tools Workshop – be10x Certificate in Google Drive">
+
+                <div class="cert-card-header">
+                    <span class="cert-index">CERT // 03</span>
+                    <div class="cert-badge-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="cert-content">
+                    <span class="cert-type">AI WORKSHOP</span>
+                    <h3 class="cert-title">AI Tools Workshop</h3>
+                    <p class="cert-org">be10x · Generative AI &amp; Modern Tools</p>
+                </div>
+
+                <div class="cert-action">
+                    <span class="cert-link-text">VIEW CERTIFICATE</span>
+                    <span class="cert-arrow">↗</span>
+                </div>
+
+                <div class="cert-corner tl"></div>
+                <div class="cert-corner br"></div>
+
+            </a>
+
+
+            <!-- Certificate 04: UiPath – ICT Academy -->
+            <a href="https://drive.google.com/file/d/17Y3ZD0nJeRvkUSLA7BZgFgh9YhlilBD-/view?usp=drive_link"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="certificate-card certificate reveal"
+               title="Open UiPath – ICT Academy Certificate in Google Drive">
+
+                <div class="cert-card-header">
+                    <span class="cert-index">CERT // 04</span>
+                    <div class="cert-badge-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="cert-content">
+                    <span class="cert-type">AUTOMATION &amp; RPA</span>
+                    <h3 class="cert-title">UiPath Certified</h3>
+                    <p class="cert-org">UiPath · ICT Academy Academic Alliance</p>
+                </div>
+
+                <div class="cert-action">
+                    <span class="cert-link-text">VIEW CERTIFICATE</span>
+                    <span class="cert-arrow">↗</span>
+                </div>
+
+                <div class="cert-corner tl"></div>
+                <div class="cert-corner br"></div>
+
+            </a>
+
+
+            <!-- Certificate 05: INNOTICS FSD Workshop -->
+            <a href="https://drive.google.com/file/d/14OxcHtdb8Gxh7yexw3kihwMqrFu4cXlo/view?usp=drive_link"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="certificate-card certificate reveal"
+               title="Open INNOTICS FSD Workshop Certificate in Google Drive">
+
+                <div class="cert-card-header">
+                    <span class="cert-index">CERT // 05</span>
+                    <div class="cert-badge-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="cert-content">
+                    <span class="cert-type">FULL STACK WORKSHOP</span>
+                    <h3 class="cert-title">INNOTICS FSD Workshop</h3>
+                    <p class="cert-org">INNOTICS · Full Stack Development Workshop</p>
+                </div>
+
+                <div class="cert-action">
+                    <span class="cert-link-text">VIEW CERTIFICATE</span>
+                    <span class="cert-arrow">↗</span>
+                </div>
+
+                <div class="cert-corner tl"></div>
+                <div class="cert-corner br"></div>
+
+            </a>
+
+        </div>
+
+
+        <!-- Google Drive Access Notice -->
+
+        <div class="cert-note reveal">
+            <div class="cert-note-icon">ℹ</div>
+            <div class="cert-note-text">
+                <strong>Google Drive Verification:</strong> All certificates are hosted directly on verified Google Drive documents. If viewing requires access, please ensure the Google Drive file permissions are set to "Anyone with the link can view".
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     GITHUB COMMAND CENTER
+========================= -->
+
+<section class="section github-section" id="github">
+
+    <div class="section-container">
+
+        <div class="section-heading">
+
+            <span class="section-number">09</span>
+
+            <div>
+                <p class="section-label">LIVE FEED</p>
+                <h2>GITHUB <span>COMMAND CENTER</span></h2>
+            </div>
+
+        </div>
+
+
+        <div class="gh-stats reveal">
+
+            <div class="gh-stat">
+                <strong id="ghRepos">--</strong>
+                <span>REPOSITORIES</span>
+            </div>
+
+            <div class="gh-stat">
+                <strong id="ghJava">--</strong>
+                <span>JAVA PROJECTS</span>
+            </div>
+
+            <div class="gh-stat">
+                <strong id="ghUi">--</strong>
+                <span>UI/UX PROJECTS</span>
+            </div>
+
+            <div class="gh-stat">
+                <strong id="ghContrib">--</strong>
+                <span>RECENT PUSHES</span>
+            </div>
+
+            <a class="gh-profile-btn" href="https://github.com/viresh8088" target="_blank" rel="noopener noreferrer">
+                GITHUB PROFILE ↗
+            </a>
+
+        </div>
+
+
+        <div class="gh-grid" id="ghGrid">
+
+            <div class="gh-loading">UPLINK ESTABLISHED — FETCHING REPOSITORIES...</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="section contact-section" id="contact">
+
+    <div class="contact-grid">
+
+        <div class="contact-content">
+
+            <span class="small-label">
+                ESTABLISH CONNECTION
+            </span>
+
+            <h2>
+                LET'S BUILD
+                <span>SOMETHING.</span>
+            </h2>
+
+            <p>
+                Have a project, opportunity or idea?
+                Let's connect and turn it into something
+                meaningful.
+            </p>
+
+
+            <div class="contact-links">
+
+                <a href="mailto:vireshs2005@gmail.com">
+                    <span>EMAIL</span>
+                    vireshs2005@gmail.com
+                </a>
+
+                <a href="tel:+918088325200">
+                    <span>PHONE</span>
+                    +91 8088325200
+                </a>
+
+                <a href="https://github.com/viresh8088"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <span>GITHUB</span>
+                    github.com/viresh8088
+                </a>
+
+                <a href="https://www.linkedin.com/in/viresh-saradar-857a922bb"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <span>LINKEDIN</span>
+                    linkedin.com/in/viresh-saradar
+                </a>
+
+            </div>
+
+
+            <form class="contact-form" id="contactForm" autocomplete="on">
+
+                <label>
+                    <span>NAME</span>
+                    <input type="text" name="name" id="cfName" required minlength="2" maxlength="80" autocomplete="name" placeholder="Your callsign">
+                </label>
+
+                <label>
+                    <span>EMAIL</span>
+                    <input type="email" name="email" id="cfEmail" required maxlength="254" autocomplete="email" placeholder="your@email.com">
+                </label>
+
+                <label>
+                    <span>SUBJECT</span>
+                    <input type="text" name="subject" id="cfSubject" required minlength="3" maxlength="120" placeholder="Mission topic">
+                </label>
+
+                <label>
+                    <span>MESSAGE</span>
+                    <textarea name="message" id="cfMessage" rows="4" required minlength="10" maxlength="5000" placeholder="Transmission content"></textarea>
+                </label>
+
+                <button type="submit" class="btn btn-primary cf-submit" id="cfSubmit">
+                    TRANSMIT MESSAGE <span>→</span>
+                </button>
+
+                <div class="cf-progress"><span id="cfFill"></span></div>
+
+                <p class="cf-status" id="cfStatus" role="status" aria-live="polite" aria-atomic="true"></p>
+
+            </form>
+
+        </div>
+
+
+        <div class="contact-terminal">
+
+            <div class="terminal-header">
+
+                <span>VS_TERMINAL</span>
+
+                <span>● ● ●</span>
+
+            </div>
+
+            <div class="terminal-body">
+
+                <p>
+                    <span>visitor@viresh</span>:~$
+                    ./connect.sh
+                </p>
+
+                <p class="terminal-output">
+                    Initializing connection...
+                </p>
+
+                <p class="terminal-output">
+                    System ready.
+                </p>
+
+                <p>
+                    <span>visitor@viresh</span>:~$
+                    <span class="cursor">_</span>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="footer-hr"></div>
+
+    <div class="footer-main">
+
+        <div class="footer-brand">
+
+            <h3>VIRESH SARADAR</h3>
+
+            <p>JAVA FULL STACK DEVELOPER</p>
+            <p>UI/UX DESIGNER</p>
+
+            <em>THINK DIFFERENT.<br>DESIGN DIFFERENT.</em>
+
+        </div>
+
+        <div class="footer-social">
+
+            <a href="https://github.com/viresh8088" target="_blank">GITHUB</a>
+            <a href="https://www.linkedin.com/in/viresh-saradar-857a922bb" target="_blank">LINKEDIN</a>
+            <a href="mailto:vireshs2005@gmail.com">EMAIL</a>
+
+        </div>
+
+        <div class="footer-status">
+
+            <span>© 2026 VIRESH SARADAR</span>
+            <span>BUILT WITH JAVA · HTML · CSS · JAVASCRIPT</span>
+            <em>SYSTEM STATUS <i class="online-dot"></i> ONLINE</em>
+
+        </div>
+
+    </div>
+
+    <div class="footer-hr"></div>
+
+</footer>
+
+
+<!-- =========================
+     MISSION DETAIL MODAL
+========================= -->
+
+<div class="mission-overlay" id="missionOverlay" aria-hidden="true" inert>
+
+    <div class="mission-panel project-brief" role="dialog" aria-modal="true" aria-labelledby="missionTitle" aria-describedby="missionProblem missionObjective" tabindex="-1">
+
+        <button class="mission-close" id="missionClose" aria-label="Close mission details">✕</button>
+
+        <div class="mission-heading">
+            <span class="mission-tag" id="missionTag">MISSION 01</span>
+            <h2 id="missionTitle"></h2>
+        </div>
+
+        <figure class="mission-visual">
+            <div class="mission-visual-frame">
+                <span class="mission-visual-label" id="missionVisualLabel">PROJECT VISUAL</span>
+                <img id="missionImage"
+                     src="assets/images/Network_routing.optimized.jpg"
+                     alt="Intelligent Network Routing Simulator dashboard preview"
+                     width="1526"
+                     height="514"
+                     decoding="async">
+            </div>
+            <figcaption id="missionImageCaption"></figcaption>
+        </figure>
+
+        <div class="mission-overview">
+            <div class="mission-block">
+                <span class="small-label">PROBLEM STATEMENT</span>
+                <p id="missionProblem"></p>
+            </div>
+
+            <div class="mission-block">
+                <span class="small-label">OBJECTIVE</span>
+                <p id="missionObjective"></p>
+            </div>
+        </div>
+
+        <div class="mission-block">
+            <span class="small-label">ARCHITECTURE FLOW</span>
+            <div class="architecture-flow" id="missionArchitecture" role="img" aria-label="Project architecture"></div>
+        </div>
+
+        <div class="mission-details-grid">
+            <div class="mission-block">
+                <span class="small-label">TECHNOLOGY</span>
+                <div class="mission-tech" id="missionTech"></div>
+            </div>
+
+            <div class="mission-block">
+                <span class="small-label">KEY FEATURES</span>
+                <ul class="mission-features" id="missionFeatures"></ul>
+            </div>
+        </div>
+
+        <div class="mission-block">
+            <span class="small-label">CHALLENGES &amp; SOLUTIONS</span>
+            <div class="mission-challenges" id="missionChallenges"></div>
+        </div>
+
+        <div class="mission-block mission-scope" id="missionNote" role="note" hidden>
+            <span class="small-label">SCOPE &amp; VERIFICATION</span>
+            <p id="missionNoteText"></p>
+        </div>
+
+        <div class="mission-actions">
+            <a class="btn btn-primary" id="missionGithub" href="https://github.com/viresh8088/Network-Routing" target="_blank" rel="noopener noreferrer">VIEW REPOSITORY ↗</a>
+            <a class="btn btn-outline" id="missionView" href="#" target="_blank" rel="noopener noreferrer" hidden>LIVE DEMO ↗</a>
+        </div>
+
+        <p class="mission-demo-note" id="missionDemoNote" hidden></p>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     COMMAND CENTER OVERLAY
+========================= -->
+
+<div class="cc-overlay" id="ccOverlay" aria-hidden="true" inert>
+
+    <div class="cc-panel" role="dialog" aria-modal="true" aria-labelledby="ccTitle" tabindex="-1">
+
+        <div class="cc-head">
+            <h3 id="ccTitle">VIRESH COMMAND CENTER</h3>
+            <button class="cc-close" id="ccClose" aria-label="Close Command Center">✕</button>
+        </div>
+
+        <div class="cc-grid">
+
+            <a href="#home" data-cc>01 HOME</a>
+            <a href="#about" data-cc>02 ABOUT</a>
+            <a href="#skills" data-cc>03 SKILLS</a>
+            <a href="#projects" data-cc>04 PROJECTS</a>
+            <a href="#uiux" data-cc>05 UI/UX</a>
+            <a href="#build" data-cc>06 HOW I BUILD</a>
+            <a href="#experience" data-cc>07 EXPERIENCE</a>
+            <a href="#education" data-cc>08 EDUCATION</a>
+            <a href="#achievements" data-cc>09 ACHIEVEMENTS</a>
+            <a href="#certifications" data-cc>10 CERTIFICATIONS</a>
+            <a href="#github" data-cc>11 GITHUB</a>
+            <a href="#contact" data-cc>12 CONTACT</a>
+
+        </div>
+
+        <div class="cc-actions" style="margin-top: 25px; padding-top: 20px; border-top: 1px dashed rgba(0,234,255,0.25); display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;">
+            <a href="assets/resume/Viresh_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="font-size: 10px; padding: 10px 18px;">
+                VIEW RESUME ↗
+            </a>
+            <a href="assets/resume/Viresh_Resume.pdf" download="Viresh_Saradar_Resume.pdf" class="btn btn-primary" style="font-size: 10px; padding: 10px 18px;">
+                ⇩ DOWNLOAD RESUME
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     SYSTEM SETTINGS
+========================= -->
+
+<button class="settings-toggle" id="settingsToggle" title="System Settings" aria-label="System settings" aria-expanded="false" aria-controls="settingsPanel">⚙</button>
+
+<div class="settings-panel" id="settingsPanel">
+
+    <h4>SYSTEM SETTINGS</h4>
+
+    <label class="setting-row">
+        <span>ANIMATIONS</span>
+        <input type="checkbox" class="setting-switch" data-setting="animations" checked>
+    </label>
+
+    <label class="setting-row">
+        <span>PARTICLES</span>
+        <input type="checkbox" class="setting-switch" data-setting="particles" checked>
+    </label>
+
+    <label class="setting-row">
+        <span>PARALLAX</span>
+        <input type="checkbox" class="setting-switch" data-setting="parallax" checked>
+    </label>
+
+    <label class="setting-row">
+        <span>SOUND</span>
+        <input type="checkbox" class="setting-switch" data-setting="sound">
+    </label>
+
+</div>
+
+
+<!-- Back to top -->
+
+<button class="back-to-top" id="backToTop" title="Return to base" aria-label="Return to top">
+
+    <span class="btt-icon">✈</span>
+    <span class="btt-label">RETURN<br>TO BASE</span>
+    <span class="btt-arrow">↑</span>
+
+</button>
+
+
+<!-- JavaScript -->
+<!-- Settings load first so motion preferences apply before visual initialization. -->
+<script src="features.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
