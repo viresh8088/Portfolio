@@ -1,0 +1,17 @@
+﻿.git
+.backup
+.vscode
+target
+.env
+.env.*
+!.env.example
+**/*.pem
+**/*.key
+**/*.p12
+**/*.local.properties
+**/application-local.properties
+**/application-secrets.properties
+**/secrets/
+Portfolio_Audit_Report.md
+setup_git.ps1
+HELP.md
